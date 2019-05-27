@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c3z-ZH-0dI">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hide Image View Controller-->
+        <scene sceneID="P3n-rj-eQp">
+            <objects>
+                <viewController id="c3z-ZH-0dI" customClass="HideImageViewController" customModule="ARApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rWe-dv-iSp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-Zm-FZy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dVj-Zm-FZy" firstAttribute="leading" secondItem="kbv-eo-OKJ" secondAttribute="leading" id="1xx-LB-A0X"/>
+                            <constraint firstItem="dVj-Zm-FZy" firstAttribute="bottom" secondItem="kbv-eo-OKJ" secondAttribute="bottom" id="56i-Iz-Sxu"/>
+                            <constraint firstItem="dVj-Zm-FZy" firstAttribute="top" secondItem="rWe-dv-iSp" secondAttribute="top" id="sfq-UA-H4P"/>
+                            <constraint firstItem="dVj-Zm-FZy" firstAttribute="trailing" secondItem="kbv-eo-OKJ" secondAttribute="trailing" id="udo-Me-0iW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kbv-eo-OKJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dVj-Zm-FZy" id="XW5-JE-gbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPL-GD-2AD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.5" y="134.1549295774648"/>
+        </scene>
+    </scenes>
+</document>
