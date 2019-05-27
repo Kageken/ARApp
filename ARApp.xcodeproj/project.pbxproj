@@ -16,6 +16,7 @@
 		FB195C22229BC60600C1F3AE /* HideImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB195C21229BC60600C1F3AE /* HideImage.storyboard */; };
 		FB195C24229BC62700C1F3AE /* Measure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB195C23229BC62700C1F3AE /* Measure.storyboard */; };
 		FB195C26229BC85E00C1F3AE /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB195C25229BC85E00C1F3AE /* MeasureViewController.swift */; };
+		FB195C28229BCD1C00C1F3AE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB195C27229BCD1C00C1F3AE /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB195C21229BC60600C1F3AE /* HideImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HideImage.storyboard; sourceTree = "<group>"; };
 		FB195C23229BC62700C1F3AE /* Measure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Measure.storyboard; sourceTree = "<group>"; };
 		FB195C25229BC85E00C1F3AE /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		FB195C27229BCD1C00C1F3AE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				FB195C0D229BC30000C1F3AE /* AppDelegate.swift */,
+				FB195C27229BCD1C00C1F3AE /* Extension.swift */,
 				FB195C0F229BC30000C1F3AE /* art.scnassets */,
 				FB195C11229BC30000C1F3AE /* HideImageViewController.swift */,
 				FB195C25229BC85E00C1F3AE /* MeasureViewController.swift */,
@@ -153,6 +156,7 @@
 				FB195C26229BC85E00C1F3AE /* MeasureViewController.swift in Sources */,
 				FB195C12229BC30000C1F3AE /* HideImageViewController.swift in Sources */,
 				FB195C0E229BC30000C1F3AE /* AppDelegate.swift in Sources */,
+				FB195C28229BCD1C00C1F3AE /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
