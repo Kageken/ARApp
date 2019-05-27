@@ -36,6 +36,9 @@
                                 <rect key="frame" x="10" y="508" width="300" height="30"/>
                                 <color key="backgroundColor" red="0.31802407449999998" green="1" blue="0.95442715330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="98a-xz-wzV" eventType="touchUpInside" id="VmR-nS-XdF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,6 +56,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BOB-TD-hI3"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Yi0-ok-u6D" id="6Xy-Pc-ZB1"/>
+                        <outlet property="sceneView" destination="8dG-gz-ypv" id="5YC-jI-B2Q"/>
+                        <outlet property="textView" destination="lnv-de-PEx" id="zhE-s9-1Zl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8T-4p-tNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
