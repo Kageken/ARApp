@@ -83,7 +83,12 @@ class HideImageViewController: UIViewController, ARSCNViewDelegate {
         }
         currentPos = nPos
     }
-    
+
+    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
+        setup()
+    }
+
+    //MARK: - Session
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         
@@ -123,5 +128,6 @@ class HideImageViewController: UIViewController, ARSCNViewDelegate {
     private func setup() {
         self.textView.text = "node position:\nrotation:\ncamera position:\ndistance from camera:"
         self.button.setTitle("Set Start Position", for: .normal)
+        arNode.removeFromParentNode()
     }
 }
