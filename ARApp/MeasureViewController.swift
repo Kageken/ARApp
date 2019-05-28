@@ -12,6 +12,10 @@ import ARKit
 
 class MeasureViewController: UIViewController, ARSCNViewDelegate {
 
+    private var startNode: SCNNode?
+    private var endNode: SCNNode?
+    private var lineNode: SCNNode?
+
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
@@ -23,6 +27,8 @@ class MeasureViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.showsStatistics = true
         let scene = SCNScene()
         self.sceneView.scene = scene
+
+        reset()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +42,25 @@ class MeasureViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.session.pause()
     }
 
+    //MARK: - Private
+    private func reset() {
+        startNode?.removeFromParentNode()
+        startNode = nil
+        endNode?.removeFromParentNode()
+        endNode = nil
+    }
+
+    private func putSphere(at pos: SCNVector3, radius: CGFloat, color: UIColor) -> SCNNode {
+        let sphere = SCNSphere(radius: radius)
+        let material = SCNMaterial()
+        material.diffuse.contents = color
+        sphere.materials = [material]
+        let node = SCNNode(geometry: sphere)
+        node.position = pos
+        return node
+    }
+
+    //MARK: - Session
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
 

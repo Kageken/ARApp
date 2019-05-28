@@ -5,6 +5,9 @@
   },
   "resources" : [
     {
+      "filename" : "DigitalImageProcessing.arreferenceimage"
+    },
+    {
       "filename" : "Lenna.arreferenceimage"
     }
   ]
