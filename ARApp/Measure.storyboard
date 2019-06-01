@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Measure View Controller-->
+        <!--Measure-->
         <scene sceneID="LAl-v5-Hi9">
             <objects>
-                <viewController id="98a-xz-wzV" customClass="MeasureViewController" customModule="ARApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Measure" id="98a-xz-wzV" customClass="MeasureViewController" customModule="ARApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PWQ-GS-nTD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
